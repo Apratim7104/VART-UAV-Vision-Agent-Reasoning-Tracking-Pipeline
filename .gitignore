@@ -1,0 +1,97 @@
+# =============================================================================
+#  UAV Florence-2 Multi-Agent Pipeline — .gitignore
+# =============================================================================
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+virtualenv/
+
+# ── Distribution / Packaging ─────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+wheels/
+
+# ── Jupyter / IPython ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Testing & Coverage ───────────────────────────────────────────────────────
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ── Type Checkers ────────────────────────────────────────────────────────────
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# ── Generated Evaluation Outputs ─────────────────────────────────────────────
+# Output videos and annotated images produced during runs
+*.mp4
+*.avi
+annotated_result.png
+
+# Evaluation results (generated at runtime — do NOT track)
+batch_eval_results/
+batch_eval_results_v2/
+eval_output/
+eval_output_resume/
+eval_batch_output/
+eval_results.json
+checkpoint.json
+batch_report_*.pdf
+
+# ── Model Weights / HuggingFace Cache ────────────────────────────────────────
+# Florence-2 weights are downloaded automatically — never commit them
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Logs & Temporary Files ───────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+
+# ── Data (large datasets — instruct users to download separately) ─────────────
+# Keep data/sample_sequence/ and data/batch_dataset/ for quick testing
+# Ignore full VisDrone / UAVDT downloads
+data/VisDrone2019-MOT-val/
+data/uav_florence2_agent/
+data/UAVDT/
+
+# ── Secrets ──────────────────────────────────────────────────────────────────
+.env
+secrets.yaml
+config_local.py
