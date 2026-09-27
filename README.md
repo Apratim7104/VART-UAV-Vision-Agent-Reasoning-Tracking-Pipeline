@@ -417,7 +417,7 @@ If you use this pipeline in your research, please cite:
   title   = {UAV Florence-2 Multi-Agent Autonomous Flight Pipeline},
   author  = {Apratim},
   year    = {2026},
-  url     = {https://github.com/<your-username>/uav_florence2_agent},
+  url     = {https://github.com/Apratim7104/uav_florence2_agent},
 }
 ```
 
